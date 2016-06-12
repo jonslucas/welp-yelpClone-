@@ -25,8 +25,7 @@ const environEnv = dotenv.config({
 const envVars = Object.assign({}, dotEnvVars, environEnv);
 const defines = Object.keys(envVars)
     .reduce((memo, key)=>{
-        const val = JSON.stringify(envVars[key]);
-        memo[`__${key.toUpperCase()}__`] = val;
+        memo[`__${key.toUpperCase()}__`] = JSON.stringify(envVars[key]);
         return memo;
     }, {
         __NODE_ENV__: JSON.stringify(NODE_ENV)
