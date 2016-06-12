@@ -2,14 +2,14 @@ import React, { PropTypes } from 'react'
 import { Router } from 'react-router'
 
 
-import 'font-awesome/css/font-awesome.css'
-import styles from './styles.module.css'
+//import 'font-awesome/css/font-awesome.css'
+//import styles from './styles.module.css'
 
 class App extends React.Component {
     static propTypes = {
         routes: PropTypes.object.isRequired,
         history: PropTypes.object.isRequired
-    }
+    };
     //getter
     get content() {
         return (<Router
