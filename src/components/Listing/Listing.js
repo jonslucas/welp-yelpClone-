@@ -6,8 +6,8 @@ import styles from './styles.modules.css'
 
 export class Listing extends React.Component {
     static propTypes = {
-        places: PropTypes.object.isRequired,
-        onClick: PropTypes.object.isRequired
+        places: PropTypes.array.isRequired,
+        onClick: PropTypes.func.isRequired
     };
     render() {
         return (

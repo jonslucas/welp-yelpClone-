@@ -1,6 +1,31 @@
+@import url('../../styles/colors.css');
+
 .conatiner {
     height: 100%;
     overflow: auto;
     padding-bottom: 60px;
     margin: 0;
+}
+
+.item {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #eeeeee;
+    padding: 10px;
+    text-decoration: none;
+}
+.item .title {
+    flex: 2;
+    font-size: 1.2em;
+}
+.title:hover {
+    color: var(--highlight);
+}
+.item .rating {
+    text-align: right;
+    flex: 1;
+}
+
+.item .rating:last-child {
+    border-bottom: none;
 }

@@ -1,4 +1,6 @@
 import React from 'react'
+
+import Listing from 'components/Listing/Listing'
 import styles from './styles.modules.css'
 
 export class Sidebar extends React.Component {
@@ -7,6 +9,9 @@ export class Sidebar extends React.Component {
             <div className={styles.sidebar}>
                 <div className={styles.heading}>
                     <h1>{this.props.title}</h1>
+                    <Listing
+                        places={this.props.places}
+                        onClick={()=>{}} />
                 </div>
             </div>
         );
