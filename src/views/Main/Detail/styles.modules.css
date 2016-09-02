@@ -1,19 +1,31 @@
 @import url("../../../styles/base.css");
 
+.wrapper {
+    display: flex;
+    margin: 0;
+
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -o-box-orient: horizontal;
+
+    flex-direction:column;
+    flex: 1;
+}
 .details {
     padding: 0 var(--padding);
-}
-.details .photoStrip {
-    flex: 1;
-    display: flex;
-    overflow: auto;
-}
-.details ::-webkit-scrollbar {
-    width: 0px;
-    background: transparent;
-}
-.details img {
-    margin: 0 1px;
+
+    .photoStrip {
+        flex: 1;
+        display: flex;
+        overflow: auto;
+    }
+    ::-webkit-scrollbar {
+        width: 0px;
+        background: transparent;
+    }
+    img {
+        margin: 0 1px;
+    }
 }
 
 .header {
