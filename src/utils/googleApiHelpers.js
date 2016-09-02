@@ -6,7 +6,7 @@ export function searchNearby(google, map, request) {
           if (status == google.maps.places.PlacesServiceStatus.OK) {
               resolve(res, pagination);
           } else {
-              reject (res, status);
+              reject(res, status);
           }
       })
   });
@@ -17,7 +17,7 @@ export function getDetails(google, map, placeId) {
         const service = new google.maps.places.PlacesService(map);
         const request = { placeId };
 
-        sevice.getDeatails(request, (place, status)=>{
+        service.getDetails(request, (place, status)=>{
             if(status != google.maps.places.PlacesServiceStatus.OK) {
                 return reject(status);
             } else {

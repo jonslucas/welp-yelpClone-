@@ -44,6 +44,7 @@ export class Container extends React.Component {
     }
 
     render() {
+
         let children = null;
         if (this.props.children) {
             children = React.cloneElement(
@@ -65,6 +66,7 @@ export class Container extends React.Component {
                     <Header />
                     <Sidebar
                         title={'Restaurants'}
+
                         places={this.state.places}
 
                     />
